@@ -315,7 +315,7 @@
         .section-title {
             font-family: 'Inter', sans-serif;
             font-size: clamp(30px, 4.5vw, 48px);
-            font-weight: 700;
+            font-weight: 650;
             line-height: 1.15;
             letter-spacing: -0.02em;
         }
@@ -830,6 +830,19 @@
         .project-card.show {
             display: flex;
         }
+            /* FINAL typography override (put at end of CSS) */
+h1, h2, h3, .section-title, .contact-title, .experience-title, .project-title, .skill-title {
+  font-family: 'Inter', sans-serif !important;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+            .section-title {
+    font-size: clamp(30px, 4vw, 48px) !important;
+    line-height: 1.12 !important;
+    font-weight: 700 !important;
+}
+
+
     </style>
 </head>
 <body>
@@ -856,7 +869,7 @@
                     I build intelligent systems that drive measurable impact
                 </h1>
                 <p class="hero-description">
-                    Data storyteller and problem solver turning complex datasets into production ML systems and insights that matter. 4+ years designing end-to-end data platforms—from GenAI-powered search engines and recommendation systems to large-scale pipelines processing 110M+ records. Obsessed with building systems that scale, solve real problems, and deliver ROI.
+                    Data storyteller and problem solver turning complex datasets into production ML systems and insights that matter. 4+ years designing end-to-end data platforms— from GenAI-powered search engines and recommendation systems to large-scale pipelines processing 110M+ records. Obsessed with building systems that scale, solve real problems, and deliver ROI.
                 </p>
                 
                 <div class="stats-row">
@@ -919,7 +932,7 @@
             <!-- Systems Built Tab -->
             <div class="experience-content" id="systems">
                 <div class="experience-card fade-in">
-                    <h3 class="experience-title" style="color: var(--accent);">Recommender Systems</h3>
+                    <h3 class="experience-title" ="color: var(--accent);">Recommender Systems</h3>
                     <div class="experience-summary">
                         Designed hybrid recommendation engines combining collaborative filtering, content-based approaches, and GenAI embeddings. Deployed on distributed infrastructure with real-time serving capabilities.
                     </div>
@@ -933,7 +946,7 @@
                 </div>
 
                 <div class="experience-card fade-in">
-                    <h3 class="experience-title" style="color: var(--accent);">Semantic Search Systems</h3>
+                    <h3 class="experience-title" ="color: var(--accent);">Semantic Search Systems</h3>
                     <div class="experience-summary">
                         Built NLP-powered search platforms using BERT, transformer models, and vector databases. Optimized for sub-second query latency on enterprise-scale document repositories.
                     </div>
@@ -947,7 +960,7 @@
                 </div>
 
                 <div class="experience-card fade-in">
-                    <h3 class="experience-title" style="color: var(--accent);">Data Engineering Platforms</h3>
+                    <h3 class="experience-title" ="color: var(--accent);">Data Engineering Platforms</h3>
                     <div class="experience-summary">
                         Architected lakehouse systems, ETL pipelines, and streaming analytics infrastructure. Automated data workflows handling terabytes of data with reliability and cost efficiency.
                     </div>
@@ -962,7 +975,7 @@
                 </div>
 
                 <div class="experience-card fade-in">
-                    <h3 class="experience-title" style="color: var(--accent);">GenAI & RAG Systems</h3>
+                    <h3 class="experience-title" ="color: var(--accent);">GenAI & RAG Systems</h3>
                     <div class="experience-summary">
                         Deployed LLM-based retrieval systems with custom orchestration, vector storage, and production-grade inference APIs. Focus on accuracy, latency, and cost optimization.
                     </div>
@@ -1038,7 +1051,7 @@
             <div class="projects-grid">
                 <!-- Clickstream Analytics -->
                 <div class="project-card show fade-in" data-category="data-engineering">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80');">
+                    <div class="project-image" ="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80');">
                         <span class="project-category">Data Engineering</span>
                     </div>
                     <div class="project-content">
@@ -1062,7 +1075,7 @@
 
                 <!-- Recommender System -->
                 <div class="project-card show fade-in" data-category="ml-ai">
-                    <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80');">
+                    <div class="project-image" ="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80');">
                         <span class="project-category">ML & AI</span>
                     </div>
                     <div class="project-content">
